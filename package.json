@@ -1,0 +1,13 @@
+{
+  "name": "mru-tabs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:browser": "node test/browser.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "version": "0.3.0"
+}

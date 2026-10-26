@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "さっきのタブ — MRU",
+  "version": "0.3.0",
+  "description": "今のウインドウのタブを、最近使った順に切り替えます。閲覧情報の外部送信はありません。",
+  "minimum_chrome_version": "121",
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "最近使ったタブ"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "MacCtrl+Q"
+      },
+      "description": "最近使ったタブの一覧を開く"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'; img-src 'self' data:; style-src 'self'"
+  }
+}

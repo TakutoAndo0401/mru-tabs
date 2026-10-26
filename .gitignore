@@ -1,0 +1,15 @@
+# Generated local verification artifacts and thumbnails
+/evidence/
+/node_modules/
+/coverage/
+/tmp/
+/.browser-profiles/
+.cache/
+.DS_Store
+*.log
+*.crx
+*.pem
+*.key
+.env
+.env.*
+!.env.example
